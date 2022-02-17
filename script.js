@@ -3,10 +3,10 @@ const input2 = document.querySelectorAll('input')[1]
 const info = document.querySelector('textarea')
 const button = document.querySelector('button')
 changeGradient();
-function changeGradient()
+function changeGradient(left = input1.value,right = input2.value)
 {
-    left = input1.value;
-    right = input2.value;
+    // left = input1.value;
+    // right = input2.value;
     document.body.style = `background: linear-gradient(to right,${left},${right});`
     text = `${document.body.style.background}`
     info.innerHTML = text;
